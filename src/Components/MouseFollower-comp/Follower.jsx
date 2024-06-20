@@ -25,7 +25,7 @@ const Follower = ({ onHover }) => {
         top: pos.Y,
         left: pos.X,
         pointerEvents: "none", 
-        zIndex: 9999, 
+        zIndex: 9999999, 
       }}
       initial={{
         height: "1.25rem",

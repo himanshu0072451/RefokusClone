@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const NavBar = ({ onHover, onLeave, hoveredItem, setSideOpen, SideOpen }) => {
   return (
-    <div className="Nav-Wrap fixed top-0 z-[999] w-full bg-[#000000] px-5 xl:px-0">
+    <div className="Nav-Wrap fixed top-0 z-[9999] w-full bg-[#000000] px-5 xl:px-0">
       <div className="max-w-screen-xl mx-auto py-4 flex items-center justify-between">
         <div className="left-nav flex items-center w-full lg:w-fit justify-between lg:justify-center">
           <img

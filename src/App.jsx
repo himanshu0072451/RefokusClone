@@ -12,6 +12,7 @@ import Loader from "./Components/Loader-comp/Loader";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SideBar from "./Components/PhoneSidebar-comp/SideBar";
+import { useMediaQuery } from "react-responsive";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -28,10 +29,16 @@ const App = () => {
 
   // SideBar Controls!
   const [SideOpen, setSideOpen] = useState(false);
+
+  // Responsive Follower!
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   return (
     <div className="relative cursor-none bg-[#000000] min-h-screen w-full text-white font-custom overflow-x-hidden">
       <Loader />
-      <Follower onHover={hoveredItem !== null} />
+      {isLargeScreen === true ? (
+        <Follower onHover={hoveredItem !== null} />
+      ) : null}
+
       <SideBar SideOpen={SideOpen} />
       <NavBar
         SideOpen={SideOpen}
