@@ -4,6 +4,9 @@ export default {
 
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['CustomFont', 'sans-serif'],
+      },
       colors: {
         black: "#000000",
       },

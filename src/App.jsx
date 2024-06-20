@@ -29,7 +29,7 @@ const App = () => {
   // SideBar Controls!
   const [SideOpen, setSideOpen] = useState(false);
   return (
-    <div className="relative cursor-none bg-[#000000] min-h-screen w-full text-white font-['satoshi'] overflow-x-hidden">
+    <div className="relative cursor-none bg-[#000000] min-h-screen w-full text-white font-custom overflow-x-hidden">
       <Loader />
       <Follower onHover={hoveredItem !== null} />
       <SideBar SideOpen={SideOpen} />
