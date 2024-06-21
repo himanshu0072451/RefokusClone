@@ -23,7 +23,7 @@ const Product = ({
       }}
       animate={{
         // backgroundColor: isHovered ? val.Background : "#000000",
-        backgroundColor: isLargeScreen && isHovered && val.Background,
+        backgroundColor: isLargeScreen && isHovered ? val.Background : null,
         paddingTop: isLargeScreen && isHovered ? "2.5rem" : "1.5rem",
         paddingBottom: isLargeScreen && isHovered ? "2.5rem" : "1.5rem",
       }}
