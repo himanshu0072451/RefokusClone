@@ -1,19 +1,23 @@
 import { animate, motion } from "framer-motion";
 import React, { useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { useMediaQuery } from "react-responsive";
 
 const Card = ({ data, index, onHoverBtn, onLeaveBtn }) => {
   const [onHover, setOnHover] = useState(false);
   const [buttonHover, setbuttonHover] = useState(null);
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
+
   return (
     <motion.div
-      className={`Card lg:${data.width} w-full transition-colors ease-in-out lg:h-full h-80 p-6  rounded-2xl flex flex-col justify-between`}
+      className={`Card w-full transition-colors ease-in-out lg:h-full h-80 p-6  rounded-2xl flex flex-col justify-between`}
       style={{
         backgroundColor: onHover
           ? index === 0
             ? "#3E3E46"
             : "#7443FF"
           : data.backGround,
+        width: isLargeScreen ? data.width : "100%",
       }}
       // animate={{
       //   paddingRight: onHover ? "2rem" : "1.5rem",

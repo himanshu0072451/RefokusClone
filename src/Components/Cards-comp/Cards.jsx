@@ -8,7 +8,7 @@ const Cards = ({ onHoverBtn, onLeaveBtn, hoveredItem }) => {
       heading: "Up Next: News",
       start: false,
       para: true,
-      width: "basis-1/3",
+      width: "37%",
       backGround: "#29292E",
     },
     {
@@ -16,7 +16,7 @@ const Cards = ({ onHoverBtn, onLeaveBtn, hoveredItem }) => {
       heading: "Get In Touch",
       start: true,
       para: false,
-      width: "basis-2/3",
+      width: "75%",
       backGround: "#323238",
     },
   ];
