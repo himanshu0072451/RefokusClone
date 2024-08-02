@@ -74,4 +74,4 @@ You can deploy the build folder to any static site hosting service like Vercel, 
 ##Contact
 ###Himanshu - himanshuingle42@gmail.com
 
-##Project Link: https://github.com/himanshu0072451/RefokusClone
+##Project Link: https://himanshu0072451.github.io/RefokusClone/
